@@ -44,7 +44,7 @@ def convolver_rgb(image, kernel, iterations = 1):
     final_image = yuv2rgb(img_yuv)
     return final_image
 final_image = convolver_rgb(dog, sharpen, iterations = 2)
-# cv2.imshow("FINAL",final_image)
+
 
 #Convolution RGB
 def convolver_comparison(image, kernel, iterations):
@@ -68,22 +68,14 @@ def convolver_comparison(image, kernel, iterations):
     final_image_rgb = np.dstack((np.rint(abs(convolved_image_r)), np.rint(abs(convolved_image_g)), np.rint(abs(convolved_image_b)))) /255
 
 
-    
-
     return final_image_rgb
-# convolved_rgb_gauss = convolver_comparison(dog, gaussian, 10)
-# plt.figure()
-# plt.imshow(convolved_rgb_gauss)
+
 
 output_path=r'C:\Users\91981\Desktop\Mtech RMS\Image.jpg'
 
-
-# Update the progress bar
 #Sharpening
 convolved_rgb_sharpen= convolver_comparison(dog, sharpen, 2)
 print(convolved_rgb_sharpen.dtype)
-# cv2.imshow("COnvolved",convolved_rgb_sharpen)
-
 
 
 cv2.imwrite(output_path,convolved_image)
@@ -107,15 +99,8 @@ def psnr(img1, img2):
     # Calculate PSNR using formula: PSNR = 20 * log10(MAX_I) - 10 * log10(MSE)
     max_pixel = 255.0
     psnr = 20 * np.log10(max_pixel) - 10 * np.log10(mse)
-    
-    # Calculate PSNR and print the result
-    # gray1=cv2.cvtColor(img1,cv2.COLOR_BGR2GRAY)
-    # gray2=cv2.cvtColor(img2,cv2.COLOR_HSV2BGR)
-    # gray2=cv2.cvtColor(gray2,cv2.COLOR_BGR2GRAY)
-    # ssim_index = ssim(gray1,gray2,win_size=5)
+   
     return psnr
 
 
-# psnr_val=psnr(dog,final_image)
-# print(psnr_val)
-# print(f"SSIM index for the enhanced image: {ssim_index}")
+
