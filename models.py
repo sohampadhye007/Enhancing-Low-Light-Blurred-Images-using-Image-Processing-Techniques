@@ -19,10 +19,6 @@ class CNN(nn.Module):
             nn.Conv2d(64, 64, kernel_size=3, padding=1),  
             nn.ReLU(True),
             nn.Conv2d(64, 64, kernel_size=3, padding=1),  
-            nn.ReLU(True),
-            nn.Conv2d(64, 64, kernel_size=3, padding=1),  
-            nn.ReLU(True),
-            nn.Conv2d(64, 64, kernel_size=3, padding=1),  
             nn.ReLU(True))
         
         self.decoder = nn.Sequential(             
