@@ -26,7 +26,7 @@ I have collected low light images dataset by capturing the images using two mobi
 # Bluring images
 Code for horizontal blurring of the images ------->> add_gaussian_blur.py 
 
-# Deblurring the images 
+# Debluring the images 
 
 Low light image dataset is uploaded on google drive(Link has access to only IITJ mail ids, please send request for dataset if  anyone outside from IIT Jodhpur wants access). Link for the dataset ------->> https://drive.google.com/drive/folders/19wZ61NiU9pYiMUaeF_RjB9hLcpecleJq?usp=sharing 
 
