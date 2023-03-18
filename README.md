@@ -7,10 +7,11 @@
 
 Methods for low light image enhancement- 
 
-1.Histogram Equalization------->> NIght_Enhancement_by_Histogram_equalization.py 
-2.Image enhancement by KS algorithm. We have developed this algorithm for enhancing very low light image enhancement ------->>Night_KS_algorithm.py 
+1.Histogram Equalization------->> NIght_Enhancement_by_Histogram_equalization.py
+2.Image enhancement by KS algorithm. We have developed this algorithm for enhancing very low light image enhancement ------->>Night_KS_algorithm.py
 3.Parameter tuning for different kind of low light images (medium low light, very low light image enhancement) ------->>Night_parameter_tuning.py 
 4.Nature inspired low light image enhancement ------->>Night_Nature_Inspired.py 
+
 
  
 I have collected low light images dataset by capturing the images using two mobile phones namely OnePlus8 and RealmeXT. I have blurred these images to create the blurred image dataset. 
