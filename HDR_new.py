@@ -47,20 +47,24 @@ def deblur(image,n=5,m=15):
 bermGT=cv2.imread("BermGT.jpg")
 bermGT=cv2.resize(bermGT,(312,312))
 
-blur = cv2.imread('night_blur3.jpg')
+blur = cv2.imread('night_blur4.jpg')
 blur=cv2.resize(blur,(312,312))
 
-cv2.imshow("Original Blured image",blur)
+# cv2.imshow("Original Blured image",blur)
 
 blur = preprocess(blur)
-cv2.imshow('original blur img',blur)
+# cv2.imshow('original blur img',blur)
 
 normal_deblur = deblur(blur)
-cv2.imshow('normal deblur img',normal_deblur)
+# cv2.imshow('normal deblur img',normal_deblur)
 
 lightspace_deblur =f_inverse(blur)
 
-cv2.imshow('lightspace deblur img',lightspace_deblur)
+# cv2.imshow('lightspace deblur img',lightspace_deblur)
+
+result=np.hstack((blur,normal_deblur,lightspace_deblur))
+cv2.imshow('result',result)
+
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
