@@ -21,27 +21,27 @@ from sklearn.model_selection import train_test_split
 
 # constructing the argument parser
 parser = argparse.ArgumentParser()
-parser.add_argument('-e', '--epochs', type=int, default=35, 
+parser.add_argument('-e', '--epochs', type=int, default=20, 
             help='number of epochs to train the model for')
 args = vars(parser.parse_args())
 
 # helper functions
-image_dir = r'C:\Users\SOHAM PADHYE\Documents\Sharp_blur_dataset\CV_project\outputs\New_adaptiveKernal'
+image_dir = r'C:\Users\SOHAM PADHYE\Documents\Sharp_blur_dataset\CV_project\outputs\HyperparameterTunning'
 os.makedirs(image_dir, exist_ok=True)
     
 def save_decoded_image(img, name):
-    img = img.view(img.size(0), 3, 512, 512)
+    img = img.view(img.size(0), 3, 128, 128)
     save_image(img, name)
 
 device = 'cuda:0' if torch.cuda.is_available() else 'cpu'
 
 print(device)
 
-batch_size = 2
+batch_size = 4
 
 gauss_blur = os.listdir(r'C:\Users\SOHAM PADHYE\Documents\Sharp_blur_dataset\CV_project\output\Blurred_images')
 gauss_blur.sort()
-sharp = os.listdir(r'C:\Users\SOHAM PADHYE\Documents\Sharp_blur_dataset\CV_project\Input\Night_KB')
+sharp = os.listdir(r'C:\Users\SOHAM PADHYE\Documents\Sharp_blur_dataset\CV_project\output\Enhanced Images')
 sharp.sort()
 
 x_blur = []
@@ -63,7 +63,7 @@ print(len(x_val))
 # define transforms
 transform = transforms.Compose([
     transforms.ToPILImage(),
-    transforms.Resize((512, 512)),
+    transforms.Resize((128, 128)),
     transforms.ToTensor(),
 ])
 
@@ -83,7 +83,7 @@ class DeblurDataset(Dataset):
             blur_image = self.transforms(blur_image)
             
         if self.y is not None:
-            sharp_image = cv2.imread(fr"C:\Users\SOHAM PADHYE\Documents\Sharp_blur_dataset\CV_project\Input\Night_KB/{self.y[i]}")
+            sharp_image = cv2.imread(fr"C:\Users\SOHAM PADHYE\Documents\Sharp_blur_dataset\CV_project\output\Enhanced Images\{self.y[i]}")
             sharp_image = self.transforms(sharp_image)
             return (blur_image, sharp_image)
         else:
@@ -147,15 +147,15 @@ def validate(model, dataloader, epoch):
             running_loss += loss.item()
 
             if epoch == 0 and i == (len(val_data)/dataloader.batch_size)-1:
-                save_decoded_image(sharp_image.cpu().data, name=fr"C:\Users\SOHAM PADHYE\Documents\Sharp_blur_dataset\CV_project\outputs\New_adaptiveKernal\sharp{epoch}.jpg")
-                save_decoded_image(blur_image.cpu().data, name=fr"C:\Users\SOHAM PADHYE\Documents\Sharp_blur_dataset\CV_project\outputs\New_adaptiveKernal/blur{epoch}.jpg")
+                save_decoded_image(sharp_image.cpu().data, name=fr"C:\Users\SOHAM PADHYE\Documents\Sharp_blur_dataset\CV_project\outputs\HyperparameterTunning\sharp{epoch}.jpg")
+                save_decoded_image(blur_image.cpu().data, name=fr"C:\Users\SOHAM PADHYE\Documents\Sharp_blur_dataset\CV_project\outputs\HyperparameterTunning\blur{epoch}.jpg")
 
         val_loss = running_loss/len(dataloader.dataset)
         print(f"Val Loss: {val_loss:.5f}")
 
-    save_decoded_image(outputs.cpu().data, name=fr"C:\Users\SOHAM PADHYE\Documents\Sharp_blur_dataset\CV_project\outputs\New_adaptiveKernal/val_deblurred{epoch}.jpg")
+        save_decoded_image(outputs.cpu().data, name=fr"C:\Users\SOHAM PADHYE\Documents\Sharp_blur_dataset\CV_project\outputs\HyperparameterTunning\val_deblurred{epoch}.jpg")
         
-    return val_loss
+        return val_loss
 
 train_loss  = []
 val_loss = []
@@ -178,9 +178,9 @@ plt.plot(val_loss, color='red', label='validataion loss')
 plt.xlabel('Epochs')
 plt.ylabel('Loss')
 plt.legend()
-plt.savefig(r'C:\Users\SOHAM PADHYE\Documents\Sharp_blur_dataset\CV_project\outputs\New_adaptiveKernal/loss.png')
+plt.savefig(r'C:\Users\SOHAM PADHYE\Documents\Sharp_blur_dataset\CV_project\outputs\HyperparameterTunning/loss.png')
 plt.show()
 
 # save the model to disk
 print('Saving model...')
-torch.save(model.state_dict(), r'C:\Users\SOHAM PADHYE\Documents\Sharp_blur_dataset\CV_project\outputs\New_adaptiveKernal/model.pth')
+torch.save(model.state_dict(), r'C:\Users\SOHAM PADHYE\Documents\Sharp_blur_dataset\CV_project\outputs\HyperparameterTunning/model.pth')
