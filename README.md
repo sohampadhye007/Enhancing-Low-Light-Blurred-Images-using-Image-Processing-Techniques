@@ -34,7 +34,7 @@ Low light image dataset is uploaded on google drive(Link has access to only IITJ
 
 - Deblurring using Sharpening kernel ------->>  <em> Bluring_and_Debluring_Images.py </em>
 
-- Deblurring using Wiener deconvolution ------->> <em> Deblur_Wiener_Deconvolution.py </em>
+- Deblurring using Fourier transform ------->> <em> Deblur_FT.py </em>
 
 - Light Space debluring ------->> <em> Light_space_debluring.py </em>
 
