@@ -36,7 +36,7 @@ Low light image dataset is uploaded on google drive(Link has access to only IITJ
 
 - Deblurring using Fourier transform ------->> <em> Deblur_FT.py </em>
 
-- Light Space debluring ------->> <em> Light_space_debluring.py </em>
+- Wiener filter debluring ------->> <em> Wiener_debluring.py </em>
 
 - Training the deep learning model on custom low light image dataset. Main program file is deblur_ae.py  model file is model.py.  First run  <em> model.py </em> file then run <em> deblur_ae </em> file.
 
