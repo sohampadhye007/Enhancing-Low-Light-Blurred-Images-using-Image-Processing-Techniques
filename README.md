@@ -55,6 +55,7 @@ Low light image dataset is uploaded on google drive(Link has access to only IITJ
 ## Demo
 
 <figure>
+<figcaption><em>Deblurred using CNN</em></figcaption>
   <img src="https://github.com/sohampadhye007/Enhancing-Low-Light-Blurred-Images-using-Image-Processing-Techniques/blob/main/Deblur_CNN.png?raw=true" alt="Deblured Image" title="deblured Image">
 
 </figure>
