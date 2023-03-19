@@ -12,19 +12,19 @@ Enhancing low light blured images using image processing techniques.
 # Low Light Image Enhancement 
 
 ## Methods for low light image enhancement- 
-- HistogramEqualization------->>NIght_Enhancement_by_Histogram_equalization.py
+- HistogramEqualization------->></em> NIght_Enhancement_by_Histogram_equalization.py </em>
 
-- Image enhancement by KS algorithm. We have developed this algorithm for enhancing very low light images ------->>Night_KS_algorithm.py 
+- Image enhancement by KS algorithm. We have developed this algorithm for enhancing very low light images ------->> </em> Night_KS_algorithm.py </em>
 
-- Parameter tuning for different kind of low light images (medium low light, very low light image enhancement) ------->>Night_parameter_tuning.py 
+- Parameter tuning for different kind of low light images (medium low light, very low light image enhancement) ------->> </em> Night_parameter_tuning.py </em>
 
-- Nature inspired low light image enhancement ------->>Night_Nature_Inspired.py
+- Nature inspired low light image enhancement ------->> </em> Night_Nature_Inspired.py </em>
 #
 I have collected low light images dataset by capturing the images using two mobile phones namely OnePlus8 and RealmeXT. I have blurred these images to create the blurred image dataset. 
 #
 
 # Bluring images
-Code for horizontal blurring of the images ------->> add_gaussian_blur.py 
+Code for horizontal blurring of the images ------->> </em> add_gaussian_blur.py </em>
 
 # Debluring the images 
 
@@ -32,20 +32,20 @@ Low light image dataset is uploaded on google drive(Link has access to only IITJ
 
 # Methods for deblurring the images- 
 
-- Deblurring using Sharpening kernel ------->> Bluring_and_Debluring_Images.py 
+- Deblurring using Sharpening kernel ------->>  </em> Bluring_and_Debluring_Images.py </em>
 
-- Deblurring using Wiener deconvolution ------->> Deblur_Wiener_Deconvolution.py 
+- Deblurring using Wiener deconvolution ------->> </em> Deblur_Wiener_Deconvolution.py </em>
 
-- Light Space debluring ------->>Light_space_debluring.py 
+- Light Space debluring ------->> </em> Light_space_debluring.py </em>
 
-- Training the deep learning model on custom low light image dataset. Main program file is deblur_ae.py  model file is model.py.  First run model.py file then run deblur_ae file.
+- Training the deep learning model on custom low light image dataset. Main program file is deblur_ae.py  model file is model.py.  First run  </em> model.py </em> file then run </em> deblur_ae </em> file.
 
 
 # Steps to run the project files- 
 
 - Enhance the low light images using a suitable method for your application. 
 
-- Use the "add_gaussian_blur.py" file to blur the images. 
+- Use the " </em> add_gaussian_blur.py </em> " file to blur the images. 
 
 - Choose one of the methods for deblurring. 
 
