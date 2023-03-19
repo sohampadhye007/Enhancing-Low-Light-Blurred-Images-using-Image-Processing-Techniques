@@ -3,13 +3,15 @@
 import cv2
 import numpy as np
 from matplotlib import pyplot as plt
+from skimage.metrics import structural_similarity as ssim
 
 # Step 1: Read the input image and convert to grayscale
-img = cv2.imread('Image.jpg')
+img = cv2.imread('night_blur3.jpg')
+GroundTruth=cv2.imread('BermGT.jpg',0)
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 # Step 2: Apply a horizontal motion blur filter to the image
-kernel_length = 15
+kernel_length = 3
 kernel_angle = 0
 kernel = np.zeros((kernel_length, kernel_length))
 kernel[int((kernel_length-1)/2),:] = np.ones(kernel_length)
@@ -36,11 +38,22 @@ img_back = np.fft.ifft2(f_ishift)
 img_back = np.abs(img_back)
 
 # Step 7: Normalize the resulting image to obtain a grayscale image with pixel values between 0 and 255
-img_deblurred = cv2.normalize(img_back, None, 0, 255, cv2.NORM_MINMAX, dtype=cv2.CV_8U)
+img_deblurred = cv2.normalize(img_back, None, 0, 100, cv2.NORM_MINMAX, dtype=cv2.CV_8U)
+
+# Calculate MSE (Mean Squared Error) between the two images
+mse = np.mean((GroundTruth - blurred) ** 2)
+
+# Calculate PSNR (Peak Signal-to-Noise Ratio) using the formula
+# PSNR = 20 * log10(MAX_I) - 10 * log10(MSE)
+max_pixel_value = 255  # assuming 8-bit images
+psnr = np.round(20 * np.log10(max_pixel_value) - 10 * np.log10(mse),2)
+
+# Calculate SSIM (Structural Similarity Index)
+ssim_value = np.round(ssim(GroundTruth, blurred),2)
 
 # Step 8: Display the original and deblurred images side by side
 plt.subplot(121),plt.imshow(gray,cmap = 'gray')
-plt.title('Input Image'), plt.xticks([]), plt.yticks([])
+plt.title(f'Blur Image'), plt.xticks([]), plt.yticks([])
 plt.subplot(122),plt.imshow(blurred,cmap = 'gray')
-plt.title('Deblurred Image'), plt.xticks([]), plt.yticks([])
+plt.title(f'Deblured Image \n PSNR {psnr} \n SSIM {ssim_value}'), plt.xticks([]), plt.yticks([])
 plt.show()
