@@ -12,7 +12,7 @@ Enhancing low light blured images using image processing techniques.
 # Low Light Image Enhancement 
 
 ## Methods for low light image enhancement- 
-- HistogramEqualization------->></em> NIght_Enhancement_by_Histogram_equalization.py </em>
+- HistogramEqualization------->> </em>NIght_Enhancement_by_Histogram_equalization.py</em>
 
 - Image enhancement by KS algorithm. We have developed this algorithm for enhancing very low light images ------->> </em> Night_KS_algorithm.py </em>
 
