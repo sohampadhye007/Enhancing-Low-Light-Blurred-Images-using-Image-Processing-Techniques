@@ -55,14 +55,14 @@ Low light image dataset is uploaded on google drive(Link has access to only IITJ
 ## Demo
 <!-- Figure with caption -->
 <figure>
-  <"https://raw.githubusercontent.com/sohampadhye007/Enhancing-Low-Light-Blurred-Images-using-Image-Processing-Techniques/main/Deblur_CNN.png?token=GHSAT0AAAAAAB7FQKRBCLQBFERTEFAC5ZSMZAW34ZQ" alt="Sharp Image" title="Sharp Image">
+  <img src="https://raw.githubusercontent.com/sohampadhye007/Enhancing-Low-Light-Blurred-Images-using-Image-Processing-Techniques/main/Deblur_CNN.png?token=GHSAT0AAAAAAB7FQKRBCLQBFERTEFAC5ZSMZAW34ZQ" alt="Sharp Image" title="Sharp Image">
   <figcaption><em>Deblurred image using CNN</em></figcaption>
 </figure>
 
 
 
 <figure>
-  <"https://raw.githubusercontent.com/sohampadhye007/Enhancing-Low-Light-Blurred-Images-using-Image-Processing-Techniques/main/Deblur_FT.png?token=GHSAT0AAAAAAB7FQKRBJSARX3KEZP2KJRSCZAW353A" alt="Deblured Image" title="deblured Image">
+  <img src="https://raw.githubusercontent.com/sohampadhye007/Enhancing-Low-Light-Blurred-Images-using-Image-Processing-Techniques/main/Deblur_FT.png?token=GHSAT0AAAAAAB7FQKRBJSARX3KEZP2KJRSCZAW353A" alt="Deblured Image" title="deblured Image">
   <figcaption><em>deblured Image using Fourier Transform</em></figcaption>
 </figure>
 
