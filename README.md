@@ -66,6 +66,12 @@ Low light image dataset is uploaded on google drive(Link has access to only IITJ
 
 </figure>
 
+<!-- Figure with caption -->
+<figure>
+ <figcaption><em>This is an example image</em></figcaption>
+  <img src="https://i.imgur.com/example.png" alt="Example image" width="400" title="This is an example image">
+</figure>
+
 
 
 
