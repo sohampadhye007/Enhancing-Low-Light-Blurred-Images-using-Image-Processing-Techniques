@@ -53,13 +53,6 @@ Low light image dataset is uploaded on google drive(Link has access to only IITJ
 
 
 ## Demo
-<!-- Figure with caption -->
-<figure>
-  <img src="https://raw.githubusercontent.com/sohampadhye007/Enhancing-Low-Light-Blurred-Images-using-Image-Processing-Techniques/main/Deblur_CNN.png?token=GHSAT0AAAAAAB7FQKRBCLQBFERTEFAC5ZSMZAW34ZQ" alt="Sharp Image" title="Sharp Image">
-  
-</figure>
-
-
 
 <figure>
   <img src="https://github.com/sohampadhye007/Enhancing-Low-Light-Blurred-Images-using-Image-Processing-Techniques/blob/main/Deblur_CNN.png?raw=true" alt="Deblured Image" title="deblured Image">
@@ -69,7 +62,7 @@ Low light image dataset is uploaded on google drive(Link has access to only IITJ
 <!-- Figure with caption -->
 <figure>
  <figcaption><em>Low ligth enhanced images</em></figcaption>
-  <img src="https://raw.githubusercontent.com/sohampadhye007/Enhancing-Low-Light-Blurred-Images-using-Image-Processing-Techniques/main/Figure_1.png?token=GHSAT0AAAAAAB7FQKRASTCJVAOMPWFBJ4QYZAW4EOA" alt="Fig 1" width="400" title="Figure 1">
+  <img src="https://github.com/sohampadhye007/Enhancing-Low-Light-Blurred-Images-using-Image-Processing-Techniques/blob/main/Figure_1.png?raw=true" alt="Fig 1" width="400" title="Figure 1">
 </figure>
 
 
@@ -77,7 +70,7 @@ Low light image dataset is uploaded on google drive(Link has access to only IITJ
 <!-- Figure with caption -->
 <figure>
 
-  <img src="https://raw.githubusercontent.com/sohampadhye007/Enhancing-Low-Light-Blurred-Images-using-Image-Processing-Techniques/main/Figure_2.png?token=GHSAT0AAAAAAB7FQKRAT2CAXXVT74QDM3AWZAW4GUA" alt="Fig 2" width="400" title="Figure 2">
+  <img src="https://github.com/sohampadhye007/Enhancing-Low-Light-Blurred-Images-using-Image-Processing-Techniques/blob/main/Figure_2.png?raw=true" alt="Fig 2" width="400" title="Figure 2">
 </figure>
 
 
@@ -85,7 +78,7 @@ Low light image dataset is uploaded on google drive(Link has access to only IITJ
 <!-- Figure with caption -->
 <figure>
 
-  <img src="https://raw.githubusercontent.com/sohampadhye007/Enhancing-Low-Light-Blurred-Images-using-Image-Processing-Techniques/main/Figure_3.png?token=GHSAT0AAAAAAB7FQKRASAEAIHO6OLVEJ3A4ZAW4H5Q" alt="Fig 2" width="400" title="Figure 2">
+  <img src="https://github.com/sohampadhye007/Enhancing-Low-Light-Blurred-Images-using-Image-Processing-Techniques/blob/main/Figure_3.png?raw=true" alt="Fig 2" width="400" title="Figure 2">
 </figure>
 
 
@@ -93,7 +86,7 @@ Low light image dataset is uploaded on google drive(Link has access to only IITJ
 <!-- Figure with caption -->
 <figure>
 
-  <img src="https://raw.githubusercontent.com/sohampadhye007/Enhancing-Low-Light-Blurred-Images-using-Image-Processing-Techniques/main/Figure_4.png?token=GHSAT0AAAAAAB7FQKRAYES5OZSW7QW4UPBEZAW4I5Q" alt="Fig 2" width="400" title="Figure 2">
+  <img src="https://github.com/sohampadhye007/Enhancing-Low-Light-Blurred-Images-using-Image-Processing-Techniques/blob/main/Figure_4.png?raw=true" alt="Fig 2" width="400" title="Figure 2">
 </figure>
 
 
@@ -101,7 +94,7 @@ Low light image dataset is uploaded on google drive(Link has access to only IITJ
 <!-- Figure with caption -->
 <figure>
 
-  <img src="https://raw.githubusercontent.com/sohampadhye007/Enhancing-Low-Light-Blurred-Images-using-Image-Processing-Techniques/main/Figure_5.png?token=GHSAT0AAAAAAB7FQKRALI7N6F6CUBCI65FUZAW4LJA" alt="Fig 2" width="400" title="Figure 2">
+  <img src="https://github.com/sohampadhye007/Enhancing-Low-Light-Blurred-Images-using-Image-Processing-Techniques/blob/main/Figure_5.png?raw=true" alt="Fig 2" width="400" title="Figure 2">
 </figure>
 
 
