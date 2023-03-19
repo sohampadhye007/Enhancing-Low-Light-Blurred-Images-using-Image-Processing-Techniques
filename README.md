@@ -43,13 +43,13 @@ Low light image dataset is uploaded on google drive(Link has access to only IITJ
 
 # Steps to run the project files- 
 
- 1.Enhance the low light images using a suitable method for your application. 
+ 1. Enhance the low light images using a suitable method for your application. 
 
- 2.Use the " <em> add_gaussian_blur.py </em> " file to blur the images. 
+ 2. Use the " <em> add_gaussian_blur.py </em> " file to blur the images. 
 
- 3.Choose one of the methods for deblurring. 
+ 3. Choose one of the methods for deblurring. 
 
- 4.Make sure to properly organize the blurred and sharp images for training the model. 
+ 4. Make sure to properly organize the blurred and sharp images for training the model. 
 
 
 ## Demo
