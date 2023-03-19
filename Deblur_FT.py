@@ -1,4 +1,3 @@
-#This code is used to deblure the image using Wiener deconvolution method
 #Owner karan Bhakuni, Soham Padhye (IIT Jodhpur)
 import cv2
 import numpy as np
