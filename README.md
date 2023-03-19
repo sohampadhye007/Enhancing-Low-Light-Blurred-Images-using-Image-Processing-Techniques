@@ -62,8 +62,8 @@ Low light image dataset is uploaded on google drive(Link has access to only IITJ
 
 
 <figure>
-  <img src="https://raw.githubusercontent.com/sohampadhye007/Enhancing-Low-Light-Blurred-Images-using-Image-Processing-Techniques/main/val_deblurred19.jpg?token=GHSAT0AAAAAAB7FQKRA757P25VBRDI2LHPUZAW2P5Q" alt="Deblured Image" title="deblured Image">
-  <figcaption><em>deblured Image</em></figcaption>
+  <https://raw.githubusercontent.com/sohampadhye007/Enhancing-Low-Light-Blurred-Images-using-Image-Processing-Techniques/main/Deblur_FT.png?token=GHSAT0AAAAAAB7FQKRBJSARX3KEZP2KJRSCZAW353A" alt="Deblured Image" title="deblured Image">
+  <figcaption><em>deblured Image using Fourier Transform</em></figcaption>
 </figure>
 
 
