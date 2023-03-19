@@ -68,8 +68,8 @@ Low light image dataset is uploaded on google drive(Link has access to only IITJ
 
 <!-- Figure with caption -->
 <figure>
- <figcaption><em>This is an example image</em></figcaption>
-  <img src="https://i.imgur.com/example.png" alt="Example image" width="400" title="This is an example image">
+ <figcaption><em>Low ligth enhanced images</em></figcaption>
+  <img src="https://raw.githubusercontent.com/sohampadhye007/Enhancing-Low-Light-Blurred-Images-using-Image-Processing-Techniques/main/Figure_1.png?token=GHSAT0AAAAAAB7FQKRASTCJVAOMPWFBJ4QYZAW4EOA" alt="Fig 1" width="400" title="Figure 1">
 </figure>
 
 
