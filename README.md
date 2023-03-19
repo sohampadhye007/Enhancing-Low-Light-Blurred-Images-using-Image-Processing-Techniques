@@ -54,7 +54,8 @@ Low light image dataset is uploaded on google drive(Link has access to only IITJ
 
 ## Demo
 
-Insert gif or link to demo
+<img src="https://i.imgur.com/example.png" alt="Example image">
+
 
 
 ## Documentation
