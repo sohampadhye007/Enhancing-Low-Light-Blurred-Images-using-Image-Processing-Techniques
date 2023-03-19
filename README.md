@@ -55,8 +55,8 @@ Low light image dataset is uploaded on google drive(Link has access to only IITJ
 ## Demo
 <!-- Figure with caption -->
 <figure>
-  <img src="https://raw.githubusercontent.com/sohampadhye007/Enhancing-Low-Light-Blurred-Images-using-Image-Processing-Techniques/main/sharp0.jpg?token=GHSAT0AAAAAAB7FQKRASVZM2VLLR4E3CIWAZAW2OCQ" alt="Sharp Image" title="Sharp Image">
-  <figcaption><em>Sharp Image</em></figcaption>
+  <https://raw.githubusercontent.com/sohampadhye007/Enhancing-Low-Light-Blurred-Images-using-Image-Processing-Techniques/main/Deblur_CNN.png?token=GHSAT0AAAAAAB7FQKRBCLQBFERTEFAC5ZSMZAW34ZQ" alt="Sharp Image" title="Sharp Image">
+  <figcaption><em>Deblurred image using CNN</em></figcaption>
 </figure>
 
 
