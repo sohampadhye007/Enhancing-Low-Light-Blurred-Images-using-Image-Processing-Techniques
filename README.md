@@ -32,7 +32,7 @@ Low light image dataset is uploaded on google drive(Link has access to only IITJ
 
 # Methods for deblurring the images- 
 
-- Deblurring using Sharpening kernel ------->>  <em> Bluring_and_Debluring_Images.py </em>
+- Deblurring using Sharpening kernel ------->>  <em> Sharpening_kernelDeblur.py </em>
 
 - Deblurring using Fourier transform ------->> <em> Deblur_FT.py </em>
 
